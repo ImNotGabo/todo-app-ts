@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Google Translate Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clone of Google Translate built with React. This project allows users to translate text between multiple languages in real time. The app uses an external translation API for language translation and provides a clean, responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time text translation across multiple languages.
+- Automatic language detection.
+- User-friendly, responsive interface designed with React.
+- Integrated with an external translation API to provide accurate translations.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: For building the user interface and managing state.
+- **TypeScript**: For functionality and logic handling.
+- **CSS**: For styling and creating a responsive design.
+- **HTML**: For structuring the content and layout.
+- **External Translation API**: For real-time translations.
 
-- Configure the top-level `parserOptions` property like this:
+## Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To run this project locally, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   git clone https://github.com/ImNotGabo/google-translate-clone.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Navigate to the project directory:
+
+   ```bash
+   cd google-translate-clone
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the app:
+
+   ```bash
+   npm start
+   ```
+
+The app will be available at `http://localhost:3000/`.
+
+## Live Demo
+
+You can view a live version of the project here: [Google Translate Clone](https://clone-google-translate.netlify.app/).
+
+
+---
+
+Feel free to adjust it as necessary to fit your project better!
